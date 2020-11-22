@@ -14,8 +14,8 @@ class Rectangle:
         return self.width * self.height
 
     def end_points(self):
-        corner_top_right = self.origin.coordX + self.width
-        corner_bottom_left = self.origin.coordY + self.height
+        corner_top_right = self.origin.x + self.width
+        corner_bottom_left = self.origin.y + self.height
         print('Starting Point (X)): ' + str(self.origin.coordX))
         print('Starting Point (Y)): ' + str(self.origin.coordY))
         print('End Point X-Axis (Corner Top Right): ' + str(corner_top_right))
