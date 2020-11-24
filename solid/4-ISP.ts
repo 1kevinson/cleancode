@@ -17,7 +17,7 @@ class SQlDatabase implements RemoteDatabase, Database {
     }
 }
 
-class inMemoryDatabase implements Database {
+class InMemoryDatabase implements Database {
     storeData(data: any) {
         // Storing data...
     }
