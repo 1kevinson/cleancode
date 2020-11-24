@@ -105,6 +105,8 @@ function getTransactionProcessors(transaction) {
         processPayment: null,
         processRefund: null,
     };
+
+    // High level of absctraction - WE DONT CONTROL HOW THE TRANSACTION METHOD IS CHECKED / We Just want it to be validated
     if (usesTransactionMethod(transaction, 'CREDIT_CARD')) {
         processors.processPayment = processCreditCardPayment;
         processors.processRefund = processCreditCardRefund;
@@ -118,6 +120,7 @@ function getTransactionProcessors(transaction) {
     return processors;
 }
 
+// Low level of absctraction - CONTROL OVER THE TRANSACTION METHOD
 function usesTransactionMethod(transaction, method) {
     return transaction.method === method;
 }
