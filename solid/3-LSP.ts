@@ -13,9 +13,9 @@ class Eagle extends FlyingBird {
     }
 }
 
+// Eagle can be substitute with super class Bird without changing behavior
 const eagle = new Eagle();
 eagle.fly();
-eagle.dive();
 
 // Penguin can be substitute with super class Bird without changing behavior
 class Penguin extends Bird {

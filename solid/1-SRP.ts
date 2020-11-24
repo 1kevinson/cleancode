@@ -1,5 +1,5 @@
 // Not violating SRP
-// All those methods are grouped in one responsibility
+// All those methods are grouped in one responsibility : Managing user registration
 class User {
     login(email: string, password: string) {
     }

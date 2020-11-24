@@ -6,9 +6,11 @@ interface Printer {
 class PrinterImplementation {
     verifyData(data: any) {
     }
+
+    // Then Open for extension
+    // if we want to add more rules
 }
 
-// Then Open for extension
 class WebPrinter extends PrinterImplementation implements Printer {
     print(data: any) {
         // Print web document
