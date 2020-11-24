@@ -48,6 +48,8 @@ function processTransactions(transactions) {
 }
 
 function validateTransactions(transactions) {
+    // High level of abstraction
+    // Easy to read , no room for interpretation
     if (isEmpty(transactions)) {
         const error = new Error('No transactions provided!');
         error.code = 1;
@@ -55,6 +57,8 @@ function validateTransactions(transactions) {
     }
 }
 
+// Low level of abstraction
+// Might be technically clear
 function isEmpty(transactions) {
     return !transactions || transactions.length === 0;
 }
@@ -106,7 +110,8 @@ function getTransactionProcessors(transaction) {
         processRefund: null,
     };
 
-    // High level of absctraction - WE DONT CONTROL HOW THE TRANSACTION METHOD IS CHECKED / We Just want it to be validated
+    // High level of abstraction - WE DONT CONTROL HOW THE TRANSACTION METHOD IS CHECKED / We Just want it to be checked
+    // Easy to read , no room for interpretation
     if (usesTransactionMethod(transaction, 'CREDIT_CARD')) {
         processors.processPayment = processCreditCardPayment;
         processors.processRefund = processCreditCardRefund;
@@ -120,7 +125,8 @@ function getTransactionProcessors(transaction) {
     return processors;
 }
 
-// Low level of absctraction - CONTROL OVER THE TRANSACTION METHOD
+// Low level of abstraction - CONTROL OVER THE TRANSACTION METHOD
+// Might be technically clear
 function usesTransactionMethod(transaction, method) {
     return transaction.method === method;
 }
