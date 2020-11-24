@@ -1,3 +1,8 @@
+/**
+ * @OPEN_CLOSE_PRINCIPLE Class should be open for extension and close for modification
+ *
+ */
+
 interface Printer {
     print(data: any);
 }
@@ -7,7 +12,7 @@ class PrinterImplementation {
     verifyData(data: any) {
     }
 
-    // Then Open for extension
+    // but Open for extension
     // if we want to add more rules
 }
 

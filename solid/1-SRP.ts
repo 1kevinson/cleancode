@@ -1,3 +1,9 @@
+/**
+ * @SINGLE_RESPONSIBILITY_PRINCIPLE Class should have one responsibility, should change for only one reason
+ *
+ */
+
+
 // Not violating SRP
 // All those methods are grouped in one responsibility : Managing user registration
 class User {

@@ -1,3 +1,8 @@
+/**
+ * @INTERFACE_SEGREGATION_PRINCIPLE Many client-specific interfaces are better than one more general purpose
+ *
+ */
+
 interface Database {
     storeData(data: any);
 }

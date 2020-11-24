@@ -1,3 +1,8 @@
+/**
+ * @LISKOV_SUBSTITUTION_PRINCIPLE Objects should be replaceable with instance of their subclass without altering the behavior
+ *
+ */
+
 class Bird {
 }
 
@@ -13,7 +18,7 @@ class Eagle extends FlyingBird {
     }
 }
 
-// Eagle can be substitute with super class Bird without changing behavior
+// Eagle can be substitute with super class FlyingBird without changing behavior
 const eagle = new Eagle();
 eagle.fly();
 
