@@ -1,4 +1,5 @@
 // Not violating SRP
+// All those methods are grouped in one responsibility
 class User {
     login(email: string, password: string) {
     }
