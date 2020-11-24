@@ -1,3 +1,4 @@
+// Don't Repeat Yourself
 function createUser(email, password) {
     if (!inputIsValid(email, password)) {
         showErrorMessage('Invalid input!');
